@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link rel="icon" href="imagen/lener.ico" type="image/x-icon">
+</head>
+
+<body background="imagen/Fondo.jpg">
+    <header>
+        <h1>Contactame</h1>
+        <nav>
+            <div>
+                <a href="index.html">
+                    <button type="button">
+                      <span class="sr-only">Inicio</span>
+                    </button>
+                </a>
+                <a href="about.html">
+                    <button type="button">
+                      <span class="sr-only">Sobre mi</span>
+                    </button>
+                </a>
+                <a href="contact.html">
+                    <button type="button">
+                      <span class="sr-only">Contactame</span>
+                    </button>
+                </a>
+
+            </div>
+
+        </nav>
+    </header>
+    <section>
+        <table width="40%" border="0" align="center">
+            <tr>
+                <td>Nombre: </td>
+                <td align="center"> <input type="text" name="txtnombre" size="30"> </td>
+            </tr>
+            <tr>
+                <td>Apellidos: </td>
+                <td align="center"> <input type="text" name="txtapellido" size="30"> </td>
+            </tr>
+            <tr>
+                <td>Correo: </td>
+                <td align="center"> <input type="email" name="txtcorreo" size="30"> </td>
+            </tr>
+            <tr>
+                <td>Telefono: </td>
+                <td align="center"> <input type="text" name="txttelefono" size="30" maxlength="9"> </td>
+            </tr>
+            <tr>
+                <td>DNI: </td>
+                <td align="center"> <input type="text" name="txtdni" size="30" maxlength="8" value="Ingrese dni"> </td>
+            </tr>
+            <tr>
+                <td>Género: </td>
+                <td align="center">
+                    <input type="radio" name="genero" id="1" checked> Masculino
+                    <input type="radio" name="genero" id="2"> Femenino
+                </td>
+            </tr>
+            <tr>
+                <td>¿Como te contacto?</td>
+                <td>
+                    <input type="checkbox" name="cbxCorreo"> Correo
+                    <input type="checkbox" name="cbxTelefono">Telefono
+                    <input type="checkbox" name="cbxninguno" checked> No me llames, yo te llamo.
+                </td>
+            </tr>
+            <tr>
+                <td><textarea readonly name="sug" id="sug01" cols="10" rows="1">Sugerencias</textarea></td>
+                <td align="center"><textarea name="sugedt" id="" cols="32" rows="2">Sugiéreme...</textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Enviar ">
+                    <input type="reset" value="Borrar">
+                    <input type="file" value="Elegir archivo">
+                </td>
+
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <h1>Pronto nos pondremos en contacto</h1>
+                    <img src="imagen/logolener.png" alt="logo">
+                </td>
+            </tr>
+        </table>
+    </section>
+    <!-- Seccion de pie de pagina-->
+    <footer>
+        <ul>
+            <li>e-mail:
+                <a href="mailto:lcrisologon.edu.pe">lcrisologon.edu.pe</a> </li>
+        </ul>
+        <ul>
+            <li>facebook: <a href="https://web.facebook.com/Lener.cn/">Lener Crisologo Narro</a></li>
+
+        </ul>
+        <ul>
+            <li>telefono: 976411784</li>
+
+        </ul>
+        <ul>
+            <li>linkelin: <a href="https://pe.linkedin.com/"> lener crisologo</a></li>
+        </ul>
+        <ul>
+
+        </ul>
+        <address>
+            Autor: Lener Crisólogo Narro <br/>          
+            &copy; 2020 Copyright
+        </address>
+    </footer>
+</body>
+
+</html>

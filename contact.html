@@ -6,97 +6,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactos</title>
     <link rel="icon" href="imagen/lener.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/contac.css">
+    <link rel="stylesheet" href="estilos/footer.css">
 </head>
 
 <body>
-    <header>
-        <h1>Contactame</h1>
-        <nav>
-            <div>
+    <header class="header">
+        <div class="header-nav">
+            <nav>
                 <a href="index.html"> Inicio</a>
                 <a href="about.html"> Sobre mi </a>
                 <a href="contact.html">Contactame </a>
-            </div>
-
-        </nav>
+            </nav>
+            <a href="#" class="txtEncabezado">Contacto</a>
+        </div>
     </header>
-    <section>
-        <table>
-            <tr>
-                <td>Nombre: </td>
-                <td> <input type="text" name="txtnombre" autofocus></td>
-            </tr>
-            <tr>
-                <td>Apellidos: </td>
-                <td> <input type="text" name="txtapellido"> </td>
-            </tr>
-            <tr>
-                <td>Correo: </td>
-                <td> <input type="email" name="txtcorreo"> </td>
-            </tr>
-            <tr>
-                <td>Telefono: </td>
-                <td> <input type="text" name="txttelefono" maxlength="9"> </td>
-            </tr>
-            <tr>
-                <td>DNI: </td>
-                <td> <input type="text" name="txtdni" maxlength="8" value="Ingrese dni "> </td>
-            </tr>
-            <tr>
-                <td>Género: </td>
-                <td>
-                    <input type="radio" name="genero" id="1" checked> Masculino
-                    <input type="radio" name="genero" id="2"> Femenino
-                </td>
-            </tr>
-            <tr>
-                <td>¿Como te contacto?</td>
-                <td>
-                    <input type="checkbox" name="cbxCorreo" id="cbxCorreo"> Correo
-                    <input type="checkbox" name="cbxTelefono" id="cbxTelefono">Telefono
-                    <input type="checkbox" name="cbxninguno" id="cbxNinguno" checked> No me llames, yo te llamo.
-                </td>
-            </tr>
-            <tr>
-                <td><textarea readonly name="sug" id="sug01" cols="10" rows="1">Sugerencias</textarea></td>
-                <td><textarea name="sugedt" id="sug02" cols="32" rows="2">Sugiéreme...</textarea></td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Borrar">
-                </td>
+    <section class="cont-section">
 
-            </tr>
+        <div class="item" id="item1">
 
-            <tr>
-                <td colspan="2">
-                    <h2>Pronto nos pondremos en contacto</h2>
-                    <img src="imagen/logolener.png" alt="logo">
-                </td>
-            </tr>
-        </table>
+            <table class="table-input">
+                <tr>
+                    <td>Nombre: </td>
+                    <td> <input type="text" name="txtnombre" autofocus></td>
+                </tr>
+                <tr>
+                    <td>Apellidos: </td>
+                    <td> <input type="text" name="txtapellido"> </td>
+                </tr>
+                <tr>
+                    <td>Correo: </td>
+                    <td> <input type="email" name="txtcorreo"> </td>
+                </tr>
+                <tr>
+                    <td>Telefono: </td>
+                    <td> <input type="text" name="txttelefono" maxlength="9"> </td>
+                </tr>
+                <tr>
+                    <td>DNI: </td>
+                    <td> <input type="text" name="txtdni" maxlength="8"> </td>
+                </tr>
+            </table>
+            <table class="table-radios">
+                <tr>
+                    <td>Género: </td>
+                    <td>
+                        <input type="radio" name="genero" id="1" checked> Masculino
+                        <input type="radio" name="genero" id="2"> Femenino
+                    </td>
+                </tr>
+                <tr>
+                    <td>¿Como te contacto?</td>
+                    <td>
+                        <input type="checkbox" name="cbxCorreo" id="cbxCorreo"> Correo
+                        <input type="checkbox" name="cbxTelefono" id="cbxTelefono">Telefono
+                        <input type="checkbox" name="cbxninguno" id="cbxNinguno" checked> No me llames, yo te llamo.
+                    </td>
+                </tr>
+                <tr>
+                    <td><textarea readonly name="sug" id="sug01" cols="10" rows="1">Sugerencias</textarea></td>
+                    <td><textarea name="sugedt" id="sug02" cols="32" rows="2">Sugiéreme...</textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Borrar">
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <img src="imagen/contactanos.jpg" alt="contactoslogo">
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
     </section>
     <!-- Seccion de pie de pagina-->
-    <footer>
-        <ul>
-            <li>e-mail:
-                <a href="mailto:lcrisologon.unc.edu.pe ">lcrisologon.unc.edu.pe</a> </li>
-        </ul>
-        <ul>
-            <li>facebook: <a href="https://web.facebook.com/Lener.cn/ ">Lener Crisologo Narro</a></li>
+    <footer class="footer">
+        <nav class="navfooter">
+            <ul>
+                <li>e-mail:
+                    <a href="mailto:lcrisologon.unc.edu.pe">lcrisologon.unc.edu.pe</a>
+                </li>
+                <li>facebook: <a href="https://web.facebook.com/Lener.cn/">Lener Crisologo Narro</a></li>
+                <li>telefono:
+                    <a href="976411784">976411784</a>
+                </li>
+                <li>linkelin: <a href="https://pe.linkedin.com/"> lener crisologo</a></li>
+            </ul>
 
-        </ul>
-        <ul>
-            <li>telefono: 976411784</li>
+        </nav>
 
-        </ul>
-        <ul>
-            <li>linkelin: <a href="https://pe.linkedin.com/ "> lener crisologo</a></li>
-        </ul>
-        <ul>
-
-        </ul>
         <address>
             Autor: Lener Crisólogo Narro <br/>          
             &copy; 2020 Copyright

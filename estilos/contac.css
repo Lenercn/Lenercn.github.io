@@ -1,0 +1,97 @@
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        /*tamaño de letra*/
+        font-size: 1.2rem;
+        /*interliniado*/
+        line-height: 1.5em;
+        background-image: url(../imagen/contac.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    
+    .header {
+        background: black;
+        color: white;
+        padding: 1rem 0;
+        /*hacer el menu fijo*/
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+    }
+    
+    .header a {
+        color: white;
+        text-decoration: none;
+        padding: 0.5em 1rem;
+        transition: all 0.30 linear;
+    }
+    
+    .header a:hover {
+        background: rgba(6, 241, 170, 0.253);
+        border-radius: 10em;
+    }
+    
+    .header-nav {
+        display: flex;
+        justify-content: space-between;
+        /*aliniamos al centro*/
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    /*logo*/
+    
+    .header-nav .txtEncabezado {
+        letter-spacing: 1px;
+        font-size: 2em;
+    }
+    
+    .cont-section {
+        padding-top: 10rem;
+    }
+    
+    table {
+        padding-top: 3em;
+        align-content: center;
+        border-radius: 10%;
+        border-collapse: collapse;
+        width: 80%;
+        margin: auto;
+    }
+    
+    table td {
+        text-align: center;
+        height: 50%;
+        font-size: 1.1em;
+    }
+    
+    table tr {
+        color: white;
+    }
+    
+    .table-input input {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-size: 1.5em;
+        color: white;
+        border-radius: 10pt;
+        height: 90%;
+        width: 60%;
+        background-color: #C78D48;
+    }
+    
+    .table-radios input {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-size: 1em;
+        background-color: #C78D48;
+        color: white;
+        border-radius: 10pt;
+    }
+    
+    table td img {
+        border-radius: 50%;
+        height: 25%;
+        width: 18%;
+    }

@@ -6,33 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre nosotros</title>
     <link rel="icon" href="imagen/lener.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/about.css">
+    <link rel="stylesheet" href="estilos/footer.css">
 </head>
 
 <body>
-    <header>
-        <h1>Descripcion personal</h1>
-        <p>El poder de la imaginación nos hace infinitos <q>Jhon Muir</q></p>
-        <nav>
-            <div>
+    <header class="header">
+
+
+        <div class="header-nav">
+            <nav>
                 <a href="index.html"> Inicio</a>
                 <a href="about.html"> Sobre mi </a>
                 <a href="contact.html">Contactame </a>
-            </div>
 
-        </nav>
-    </header>
-    <section>
-        <div>
+            </nav>
+            <a href="#" class="txtEncabezado">Sobre mi</a>
 
-            <h2>Hola, mi nombre es Lener Crisólogo Narro</h2>
-            <p>
-                Nací un 08 de marzo en el caserio <ins>Rinconada</ins> distrito de Asuncion Provincia y region de Cajamarca Perú. <br/> Tengo dos hermanos Liliana y Yover, mis padres son José Crisólogo e Isabel Narro, actualmente resido en la cuidad de
-                <ins>Cajamarca.</ins>
-            </p>
         </div>
+
+
+
+
+    </header>
+    <section class="contenedoraba">
         <div>
+            <div class="slider">
+                <ul>
+                    <li>
+                        <img src="imagen/slider4.jpg" alt="foto1">
+                    </li>
+                    <li>
+                        <img src="imagen/slider3.jpg" alt="foto2">
+                    </li>
+                    <li>
+                        <img src="imagen/slider2.jpg" alt="foto3">
+                    </li>
+                    <li><img src="imagen/slider1.jpg" alt="foto4">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <h3>Mi Familia</h3>
+            <img src="imagen/Familia1.jpeg" alt="logoSistemas">
+            <p>Tengo dos hermanos Liliana y Yover, mis padres son José Crisólogo e Isabel Narro. <br> Yo, ctualmente resido en la cuidad de
+                <ins>Cajamarca.</ins></p>
+            <a href="https://youtu.be/nGx-JOLXeMY" target="blank">Ver Más</a>
+
+        </div>
+
+        <div class="card">
+            <h3>Mis origenes</h3>
+            <img src="imagen/fondo.jpg" alt="card01">
+            <p>
+                Nací un 08 de marzo en el caserio <ins>Rinconada</ins> distrito de Asuncion Provincia y region de Cajamarca Perú.
+            </p>
+            <a href="https://youtu.be/nGx-JOLXeMY" target="blank">Ver Más</a>
+        </div>
+        <div class="card">
             <h3>Mis estudios</h3>
-            <table>
+            <table class="table">
+                <img src="imagen/educacion.jpg" alt="educacion">
                 <tr>
                     <th>Nivel</th>
                     <th>Institución</th>
@@ -49,93 +84,38 @@
                 </tr>
                 <tr>
                     <td>Superior</td>
-                    <td><abbr title="Universidad nacional de Cajamarca">Unc </abbr> 82039</td>
+                    <td><abbr title="Universidad nacional de Cajamarca">Unc </abbr> </td>
                     <td>Cajamarca</td>
                 </tr>
             </table>
-        </div>
-        <h3>Mi galeria</h3>
-        <div>
-            <table>
-                <tr>
-                    <th colspan="3">Familia</th>
-                </tr>
-                <tr>
-                    <td>
-                        <img height="225" width="300" src="imagen/Familia1.jpeg" alt="foto1">
-                    </td>
-                    <td>
-                        <img height="225" width="300" src="imagen/Familia2.jpg" alt="foto2">
-                    </td>
-                    <td>
-                        <img height="225" width="300" src="imagen/Familia3.jpg" alt="foto3">
-                    </td>
-                </tr>
-            </table>
-
+            <a href="https://youtu.be/nGx-JOLXeMY" target="blank">Ver Más</a>
         </div>
 
-        <div>
-            <table>
-                <tr>
-                    <th colspan="3">Mis Amigos</th>
-                </tr>
-                <tr>
-                    <td>
-                        <img height="225" width="300" src="imagen/Amigos1.jpg" alt="foto4">
-                    </td>
-                    <td>
-                        <img height="225" width="300" src="imagen/Amigos2.jpg" alt="foto5">
-                    </td>
-                    <td>
-                        <img height="225" width="300" src="imagen/amigos3.jpg" alt="foto6">
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <div>
-            <table>
-                <tr>
-                    <th colspan="3">Mis Fotografias</th>
-                </tr>
-                <tr>
-                    <td>
-                        <img height="225" width="300" src="imagen/Foto1.jpg" alt="foto7">
-                    </td>
-                    <td>
-                        <img height="225" width="300" src="imagen/Foto2.jpg" alt="foto8">
-                    </td>
-                    <td>
-                        <img height="225" width="300" src="imagen/Foto3.jpg" alt="foto">
-                    </td>
-                </tr>
-            </table>
-        </div>
+
+
+
+
     </section>
     <!-- Seccion de pie de pagina-->
-    <footer>
-        <ul>
-            <li>e-mail:
-                <a href="mailto:lcrisologon.unc.edu.pe">lcrisologon.unc.edu.pe</a> </li>
-        </ul>
-        <ul>
-            <li>facebook: <a href="https://web.facebook.com/Lener.cn/">Lener Crisologo Narro</a></li>
+    <footer class="footer">
+        <nav class="navfooter">
+            <ul>
+                <li>e-mail:
+                    <a href="mailto:lcrisologon.unc.edu.pe">lcrisologon.unc.edu.pe</a>
+                </li>
+                <li>facebook: <a href="https://web.facebook.com/Lener.cn/">Lener Crisologo Narro</a></li>
+                <li>telefono:
+                    <a href="976411784">976411784</a>
+                </li>
+                <li>linkelin: <a href="https://pe.linkedin.com/"> lener crisologo</a></li>
+            </ul>
 
-        </ul>
-        <ul>
-            <li>telefono: 976411784</li>
+        </nav>
 
-        </ul>
-        <ul>
-            <li>linkelin: <a href="https://pe.linkedin.com/"> lener crisologo</a></li>
-        </ul>
-        <ul>
-
-        </ul>
         <address>
-                Autor: Lener Crisólogo Narro <br/>          
-                &copy; 2020 Copyright
-            </address>
+            Autor: Lener Crisólogo Narro <br/>          
+            &copy; 2020 Copyright
+        </address>
     </footer>
 </body>
 

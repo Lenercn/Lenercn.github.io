@@ -22,7 +22,7 @@
                                 color: white;
                                 text-decoration: none;
                                 padding: 0.5em 1rem;
-                                transition: all 1 linear;
+                                transition: linear;
                             }
                             
                             .header-nav {

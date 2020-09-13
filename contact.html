@@ -25,65 +25,80 @@
 
         <div class="item" id="item1">
 
-            <table class="table-input">
-                <tr>
-                    <td>Nombre: </td>
-                    <td> <input type="text" name="txtnombre" autofocus></td>
-                </tr>
-                <tr>
-                    <td>Apellidos: </td>
-                    <td> <input type="text" name="txtapellido"> </td>
-                </tr>
-                <tr>
-                    <td>Correo: </td>
-                    <td> <input type="email" name="txtcorreo"> </td>
-                </tr>
-                <tr>
-                    <td>Telefono: </td>
-                    <td> <input type="text" name="txttelefono" maxlength="9"> </td>
-                </tr>
-                <tr>
-                    <td>DNI: </td>
-                    <td> <input type="text" name="txtdni" maxlength="8"> </td>
-                </tr>
-            </table>
-            <table class="table-radios">
-                <tr>
-                    <td>Género: </td>
-                    <td>
-                        <input type="radio" name="genero" id="1" checked> Masculino
-                        <input type="radio" name="genero" id="2"> Femenino
-                    </td>
-                </tr>
-                <tr>
-                    <td>¿Como te contacto?</td>
-                    <td>
-                        <input type="checkbox" name="cbxCorreo" id="cbxCorreo"> Correo
-                        <input type="checkbox" name="cbxTelefono" id="cbxTelefono">Telefono
-                        <input type="checkbox" name="cbxninguno" id="cbxNinguno" checked> No me llames, yo te llamo.
-                    </td>
-                </tr>
-                <tr>
-                    <td><textarea readonly name="sug" id="sug01" cols="10" rows="1">Sugerencias</textarea></td>
-                    <td><textarea name="sugedt" id="sug02" cols="32" rows="2">Sugiéreme...</textarea></td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Borrar">
-                    </td>
 
-                </tr>
+            <div>
+                <table class="table-input">
+                    <tr>
+                        <td>Nombre: </td>
+                        <td> <input type="text" name="txtnombre" autofocus placeholder="Nombre"></td>
+                    </tr>
+                    <tr>
+                        <td>Apellidos: </td>
+                        <td> <input type="text" name="txtapellido" placeholder="Apellido"> </td>
+                    </tr>
+                    <tr>
+                        <td>Correo: </td>
+                        <td> <input type="email" name="txtcorreo" placeholder="Correo"> </td>
+                    </tr>
+                    <tr>
+                        <td>Telefono: </td>
+                        <td> <input type="text" name="txttelefono" maxlength="9" placeholder="Teléfono"> </td>
+                    </tr>
+                    <tr>
+                        <td>DNI: </td>
+                        <td> <input type="text" name="txtdni" maxlength="8" placeholder="DNI"> </td>
+                    </tr>
+                </table>
 
-                <tr>
-                    <td colspan="2">
-                        <img src="imagen/contactanos.jpg" alt="contactoslogo">
-                    </td>
-                </tr>
-            </table>
+            </div>
+
+            <div>
+                <table class="table-check-radio">
+                    <tr>
+                        <td>Género: </td>
+                        <td class="radio">
+                            <input type="radio" name="genero" id="1" checked> Masculino
+                            <input type="radio" name="genero" id="2"> Femenino
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>¿Como te contacto?</td>
+                        <td>
+                            <input type="checkbox" name="cbxCorreo" id="cbxCorreo"> Correo
+                            <input type="checkbox" name="cbxTelefono" id="cbxTelefono">Telefono
+                            <input type="checkbox" name="cbxninguno" id="cbxNinguno" checked> No me llames, yo te llamo.
+                        </td>
+                    </tr>
+                </table>
+
+
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <td><textarea readonly name="sug" id="sug01" cols="12" rows="1">Sugerencias</textarea></td>
+                        <td><textarea name="sugedt" id="sug02" cols="32" rows="2" placeholder="Escribe aqui tu comentario"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="button">
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Borrar">
+                        </td>
+
+                    </tr>
+                </table>
+            </div>
         </div>
 
+        <img src="imagen/contactanos.png" alt="contactoslogo">
 
+    </section>
+    <!--seccion para google maps-->
+    <section>
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6657.89017810949!2d-78.52412825840592!3d-7.148511552934906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91b25afd3fc7d087%3A0xea80a2b94d876b2b!2sCajamarca!5e0!3m2!1ses-419!2spe!4v1599062427136!5m2!1ses-419!2spe"
+                width="1340" height="450" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
     </section>
     <!-- Seccion de pie de pagina-->
     <footer class="footer">
@@ -102,8 +117,8 @@
         </nav>
 
         <address>
-            Autor: Lener Crisólogo Narro <br/>          
-            &copy; 2020 Copyright
+                      
+            &copy; 2020 Copyright Lcn
         </address>
     </footer>
 </body>

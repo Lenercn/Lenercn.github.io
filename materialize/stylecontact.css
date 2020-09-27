@@ -1,0 +1,13 @@
+            body {
+                background: rgba(0, 0, 0, .05);
+            }
+            
+            body .row {
+                margin: 5em;
+                margin-top: 2em;
+            }
+            
+            .mapa iframe {
+                width: 100%;
+                height: 20em;
+            }

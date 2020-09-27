@@ -3,61 +3,109 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
 
-    <title>My website</title>
-    <link rel="icon" href="imagen/lener.ico" type="image/x-icon">
-    <link rel="stylesheet" href="estilos/estiloPersonal.css">
-    <link rel="stylesheet" href="estilos/footer.css">
+    <title>Lener Crisologo</title>
+
+    <link rel="icon" href="imagen/logo.svg" type="image/x-icon">
+    <!-- Barra Social CSS 
+    -->
+    <link rel="stylesheet" href="social.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="bootstrap/css/styleindex.css">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
+
+    <!-- Ionic icons -->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
 </head>
 
-<body class="bodyindex">
-    <header class="header">
-        <div class="header-nav">
-            <a href="#" class="txtEncabezado">Mi Web</a>
-            <nav>
-                <a href="index.html"> Inicio</a>
-                <a href="about.html"> Sobre mi </a>
-                <a href="contact.html">Contactame </a>
-                <a href="carta05.html">Carta_05 </a>
+<body>
+
+    <div class="row no-gutters hero">
+        <div class="col-lg-6 col-md-12 infinite-scroll ">
+
+            <!-- Scroll en el css-->
+        </div>
+        <div class="col-lg-6 col-md-12 content d-flex bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light position-absolute w-100 py-3">
+                <i class="icon ion-md-finger-print lead align-middle mr-1 "></i>
+                <a class="navbar-brand font-weight-bold" href="index.html">Lener Crisólogo</a>
+                <!--Boton del nav-->
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+
+                        <li class="nav-item mr-3">
+                            <a class="nav-link" href="about.html">Acerca de mi</a>
+                        </li>
+                        <li class="nav-item mr-3">
+                            <a class="nav-link" href="contact_materialize.html">Contacto</a>
+                        </li>
+                        <li class="nav-item mr-3">
+                            <a class="nav-link" href="carta05.html">Carta_05</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
+
+            <div class="container align-self-center">
+                <h1 class="display-3 font-weight-bold mb-4">Curso de <br>Ingeniería Web</h1>
+                <p class="lead text-muted mb-5 text-justify">Mi nombre es Lener Crisólogo Narro, soy estudiante del curso de <cite>Ingeniria Web</cite> en la escuela profesional de <em>Ingeniería de sistemas</em> de la <abbr title="Universidad Nacional de Cajamarca"><strong>UNC</strong> </abbr>.</p>
+                <a href="about.html" class="btn btn-primary btn-lg mb-5">Explorar ahora</a>
+
+                <ul class="list-inline">
+
+
+                    <li class="list-inline-item mr-4">
+                        <i class="icon ion-logo-linkedin lead align-middle mr-1"></i>
+                        <a href="https://www.linkedin.com/?hl=es-la" target="_blank">
+                            <small>Lener Crisólogo Narro</small> </a>
+                    </li>
+                    <li class="list-inline-item mr-4"><i class="icon ion-logo-github lead align-middle mr-1"></i>
+                        <a href="https://github.com/LenerCrisologoNarro/" target="_blank">
+                            <small>Lener Crisólogo Narro</small> </a>
+                    </li>
+
+                    <li class="list-inline-item"><i class="icon ion-md-mail-unread lead align-middle mr-1"></i>
+                        <a href="mailto:contacto@dominio.com">
+                            <small>lcrisologon15@unc.edu.pe</small> </a>
+                    </li>
+                </ul>
+            </div>
+            <!--Barra social-->
+
+            <div class="social-bar">
+                <a href="https://www.facebook.com/" class="iconbs ion-logo-facebook" target="_blank"></a>
+                <a href="https://twitter.com/" class="iconbs  ion-logo-twitter" target="_blank"></a>
+                <a href="https://www.youtube.com/" class="iconbs  ion-logo-youtube" target="_blank"></a>
+                <a href="https://www.instagram.com/" class="iconbs  ion-logo-instagram" target="_blank"></a>
+            </div>
         </div>
+    </div>
 
-
-    </header>
-    <section class="cont-section">
-        <div>
-            <img src="imagen/perfil.jpg" alt="Imagen perfil" class="img-banner">
-        </div>
-        <div>
-
-            <h1 class="txt-bannerprincipal">Hola, Soy Lener Crisólogo Narro</h1>
-            <p class="txt-bannersec"> <em>Ingeniería de sistemas</em> <br>
-                <abbr title="Universidad Nacional de Cajamarca"><strong>UNC</strong> </abbr>
-            </p>
-
-        </div>
-    </section>
-    <!-- Seccion de pie de pagina-->
-    <footer class="footer">
-        <nav class="navfooter">
-            <ul>
-                <li>e-mail:
-                    <a href="mailto:lcrisologon.unc.edu.pe">lcrisologon.unc.edu.pe</a>
-                </li>
-                <li>facebook: <a href="https://web.facebook.com/Lener.cn/">Lener Crisologo Narro</a></li>
-                <li>telefono:
-                    <a href="976411784">976411784</a>
-                </li>
-                <li>linkelin: <a href="https://pe.linkedin.com/"> lener crisologo</a></li>
-            </ul>
-
-        </nav>
-
+    <div class=" bg-grey py-5 text-center ">
         <address>
-            &copy; 2020 Copyright Lcn
+            &copy;  Copyright-2020 <br>
+            <a href="https://pe.linkedin.com/ " target="_blank "><small>Lener Crisólogo Narro</small></a>
         </address>
-    </footer>
+
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="bootstrap/js/jquery.js "></script>
+    <script src="bootstrap/js/popper.min.js "></script>
+    <script src="bootstrap/js/bootstrap.min.js "></script>
 </body>
 
 </html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lener Crisologo</title>
+    <link rel="icon" href="imagen/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/lab07.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Ionic icons-->
+    <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
+    <!--Import materialize.css-->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+</head>
+
+<body>
+
+    <div class="container #f5f5f5 grey lighten-4">
+        <div class="titulo center ">
+            <h5>LAB 07: TALLER DE JAVASCRIPT </h5>
+        </div>
+        <div class="row ">
+
+            <div class="izq col s12 m12 l7 xl7">
+                <table>
+                    <tbody>
+                        <tr class="white-text">
+                            <td id="azul">
+                                <span>Apellidos y nombres:</span>
+                            </td>
+                            <td><input type="text" placeholder="Ingreso apellidos y nombres">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="azul"> <span id="azul" class="white-text">Fecha de Nacimiento:</span></td>
+                            <td><input type="text" class="datepicker  black-text" placeholder="Ingreso fecha nacimiento"></td>
+
+                        </tr>
+
+                    </tbody>
+                </table>
+
+
+            </div>
+            <div class="botones center col s12 m12 l5 xl5">
+
+                <table>
+                    <tbody>
+
+                        <tr>
+                            <td>
+                                <div class="btn #f9a825 yellow darken-3">Extaer</div>
+
+                            </td>
+                            <td>
+                                <div class="btn #bf360c deep-orange darken-4">Colorear</div>
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+                </table>
+
+
+            </div>
+
+        </div>
+
+        <div class="row center-align white-text ">
+            <div class="izq col s12 m12 l6 xl6">
+                <table>
+                    <tbody>
+                        <tr class="white-text">
+                            <td id="azul">
+                                <span>Apellidos paterno:</span>
+                            </td>
+                            <td><input type="text" disabled>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="azul"> <span class="white-text">Apellidos materno:</span></td>
+                            <td><input type="text" disabled></td>
+
+                        </tr>
+                        <tr>
+                            <td id="azul"> <span class="white-text">Nombres:</span></td>
+                            <td><input type="text" disabled></td>
+
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="der  col s12 m12 l6 xl6">
+                <table>
+                    <tbody>
+                        <tr class="white-text">
+                            <td id="rojo">
+                                <span>Longuitud del apellido:</span>
+                            </td>
+                            <td><input type="text" disabled>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="rojo"> <span class="white-text">Edad</span></td>
+                            <td><input type="text" disabled></td>
+
+                        </tr>
+                        <tr>
+                            <td id="rojo"> <span class="white-text">Mes en letras</span></td>
+                            <td id="rojo1"><input type="text" disabled></td>
+
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.datepicker');
+            var instances = M.Datepicker.init(elems);
+        });
+        // Or with jQuery 
+        $(document).ready(function() {
+            $('.datepicker').datepicker();
+        });
+    </script>
+</body>
+
+</html>

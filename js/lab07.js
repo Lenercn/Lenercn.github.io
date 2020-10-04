@@ -10,6 +10,16 @@
 //     $('.datepicker').datepicker();
 // });
 //validar
+window.onload = pageLoad;
+
+function pageLoad() {
+    let ex = document.getElementById("extraer")
+    let col = document.getElementById("colorear")
+    col.onclick = colorear;
+    ex.onclick = validar, obtenerDatos;
+
+}
+
 function validar() {
     let validar = document.getElementById("apnom").value;
     if (apnom.value == 0) {
@@ -55,6 +65,38 @@ function obtenerDatos() {
 
     document.getElementById("edad").value = `${ edad(fecha) }`;
     document.getElementById("mes").value = meses[mes];
+}
+let cambiar = 1;
+
+function colorear() {
+    // alert("hola mundo")
+
+    if (cambiar) {
+        document.getElementById("azul1").className = "rojo";
+        document.getElementById("azul2").className = "rojo";
+        document.getElementById("azul3").className = "rojo";
+        document.getElementById("azul4").className = "rojo";
+        document.getElementById("azul5").className = "rojo";
+        document.getElementById("rojo1").className = "azul";
+        document.getElementById("rojo2").className = "azul";
+        document.getElementById("rojo3").className = "azul";
+        document.getElementById("colorear").className = "azul"
+
+        cambiar = 0;
+        // alert(cambiar)
+    } else {
+        document.getElementById("azul1").className = "azul";
+        document.getElementById("azul2").className = "azul";
+        document.getElementById("azul3").className = "azul";
+        document.getElementById("azul4").className = "azul";
+        document.getElementById("azul5").className = "azul";
+        document.getElementById("rojo1").className = "rojo";
+        document.getElementById("rojo2").className = "rojo";
+        document.getElementById("rojo3").className = "rojo";
+        document.getElementById("colorear").className = "rojo"
+        cambiar = 1;
+    }
+
 }
 edad = (fecha) => {
     var actual = new Date();

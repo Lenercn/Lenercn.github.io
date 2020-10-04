@@ -32,12 +32,15 @@
                             <td id="azul">
                                 <span>Apellidos y nombres:</span>
                             </td>
-                            <td><input type="text" placeholder="Ingreso apellidos y nombres">
+                            <td>
+                                <input id="apnom" type="text" placeholder="Ingreso apellidos y nombres">
                             </td>
                         </tr>
                         <tr>
                             <td id="azul"> <span id="azul" class="white-text">Fecha de Nacimiento:</span></td>
-                            <td><input type="text" class="datepicker  black-text" placeholder="Ingreso fecha nacimiento"></td>
+                            <td>
+                                <input id="fecha" type="date" placeholder="Ingreso fecha nacimiento">
+                            </td>
 
                         </tr>
 
@@ -53,11 +56,11 @@
 
                         <tr>
                             <td>
-                                <div class="btn #f9a825 yellow darken-3">Extaer</div>
+                                <div class="btn #f9a825 yellow darken-3" onclick="validar(), obtenerDatos()">Extaer</div>
 
                             </td>
                             <td>
-                                <div class="btn #bf360c deep-orange darken-4">Colorear</div>
+                                <div class="btn #bf360c deep-orange darken-4" onclick="">Colorear</div>
                             </td>
 
                         </tr>
@@ -69,6 +72,7 @@
             </div>
 
         </div>
+        <form name="registro1"></form>
 
         <div class="row center-align white-text ">
             <div class="izq col s12 m12 l6 xl6">
@@ -78,17 +82,17 @@
                             <td id="azul">
                                 <span>Apellidos paterno:</span>
                             </td>
-                            <td><input type="text" disabled>
+                            <td><input name="appat" id="appat" type="text" disabled>
                             </td>
                         </tr>
                         <tr>
                             <td id="azul"> <span class="white-text">Apellidos materno:</span></td>
-                            <td><input type="text" disabled></td>
+                            <td><input id="apmat" type="text" disabled></td>
 
                         </tr>
                         <tr>
                             <td id="azul"> <span class="white-text">Nombres:</span></td>
-                            <td><input type="text" disabled></td>
+                            <td><input id="snombre" type="text" disabled></td>
 
                         </tr>
 
@@ -103,17 +107,17 @@
                             <td id="rojo">
                                 <span>Longuitud del apellido:</span>
                             </td>
-                            <td><input type="text" disabled>
+                            <td><input id="long" type="text" disabled>
                             </td>
                         </tr>
                         <tr>
                             <td id="rojo"> <span class="white-text">Edad</span></td>
-                            <td><input type="text" disabled></td>
+                            <td><input id="edad" type="text" disabled></td>
 
                         </tr>
                         <tr>
                             <td id="rojo"> <span class="white-text">Mes en letras</span></td>
-                            <td id="rojo1"><input type="text" disabled></td>
+                            <td id="rojo1"><input id="mes" type="text" disabled></td>
 
                         </tr>
 
@@ -129,16 +133,7 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var elems = document.querySelectorAll('.datepicker');
-            var instances = M.Datepicker.init(elems);
-        });
-        // Or with jQuery 
-        $(document).ready(function() {
-            $('.datepicker').datepicker();
-        });
-    </script>
+    <script src="js/lab07.js"></script>
 </body>
 
 </html>

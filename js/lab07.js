@@ -10,13 +10,14 @@
 //     $('.datepicker').datepicker();
 // });
 //validar
+let cambiar = 1;
 window.onload = pageLoad;
 
 function pageLoad() {
     let ex = document.getElementById("extraer")
     let col = document.getElementById("colorear")
     col.onclick = colorear;
-    ex.onclick = validar, obtenerDatos;
+
 
 }
 
@@ -66,7 +67,7 @@ function obtenerDatos() {
     document.getElementById("edad").value = `${ edad(fecha) }`;
     document.getElementById("mes").value = meses[mes];
 }
-let cambiar = 1;
+
 
 function colorear() {
     // alert("hola mundo")

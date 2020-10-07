@@ -26,6 +26,10 @@
      font-weight: bold;
  }
  
+ .center {
+     padding-left: 10em;
+ }
+ 
  .ma {
      color: #ff7514;
  }
@@ -57,10 +61,14 @@
      align-content: flex-end;
  }
  
- .cont .card img {
+ img {
      height: 150px;
      width: 250px;
      align-content: center;
+ }
+ 
+ .btnaranja {
+     background: #ff7514;
  }
  
  .card {
@@ -82,4 +90,14 @@
  .time {
      text-align: right;
      padding-top: 2em;
+ }
+ /*****/
+ 
+ .btnTur {
+     background: red;
+ }
+ 
+ .responsive-img {
+     width: 80px;
+     height: 50px;
  }
